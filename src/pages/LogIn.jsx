@@ -24,6 +24,9 @@ const LogIn = () => {
           <a className="text-blue-900 p-4 mb-4 font-bold" href="">
             Register
           </a>
+          <a className="text-blue-900 p-4 mb-4 font-bold" href="">
+            Skip Login
+          </a>
         </p>
 
         {/* <BrowserRouter>
