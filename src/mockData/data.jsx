@@ -2,8 +2,6 @@ export const NavBarMenu = [
   { id: "1", title: "Home", link: "/home" },
   { id: "2", title: "Services", link: "/about" },
   { id: "2", title: "About", link: "/about" },
-  // { id: "3", title: "Contact", link: "/contact" },
-  // { id: "3", title: "Blogs", link: "/blogs" },
 ];
 
 export const footerData = [

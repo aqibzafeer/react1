@@ -1,22 +1,25 @@
-import "./App.css";
-import Header from "./layouts/header/Header";
-
-import LogIn from "./pages/Login";
+// App.jsx
+import { Routes, Route } from "react-router-dom";
+import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
-
-import CopyRight from "./layouts/footer/CopyRight";
-import Navigation from "./layouts/header/Navigation";
-
-import Footer from "./layouts/footer/Footer";
-
 import Home from "./pages/Home";
+import About from "./pages/About";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className=" w-full">
-        <Header />
-        <LogIn />
+    <Routes>
+      <Route path="/" element={<LogIn />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  );
+};
+
+export default App;
+
+{
+  /* <div className=" w-full">
         <SignUp />
       </div>
 
@@ -29,9 +32,8 @@ function App() {
       <div className=" w-full">
         <Footer />
         <CopyRight />
-      </div>
-    </>
-  );
+      </div> */
 }
-
-export default App;
+//     </>
+//   );
+// }

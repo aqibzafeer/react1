@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 function MenuItem({ item }) {
   return (
     <>
       <li key={item.id}>
-        <a
+        <Link
           className=" font-bold hover:text-yellow-300 px-5 uppercase"
-          href={item.link}
+          to={item.link}
         >
           {item.title}
-        </a>
+        </Link>
       </li>
     </>
   );

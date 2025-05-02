@@ -1,12 +1,12 @@
 import React from "react";
-// import { NavBarMenu } from "./data";
 import { NavBarMenu } from "../../mockData/data";
 import MenuItem from "./menuItem";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <>
-      <div className="text-white bg-red-800 w-full flex mt-10">
+      <div className="text-white bg-red-800 w-full flex p-5">
         <div className="w-1/5 text-center flex justify-center items-center">
           <a
             href=""
@@ -25,7 +25,9 @@ const Navigation = () => {
         </div>
 
         <div className="w-1/6 my-5 justify-center text-right ">
-          <a href="#">Logout</a>
+          <Link to="/" className="hover:text-yellow-300">
+            Logout
+          </Link>
         </div>
       </div>
     </>
