@@ -1,0 +1,10 @@
+const NotFound = () => {
+  return (
+    <div>
+      <div></div>
+      <div className="min-h-screen flex items-center justify-center"></div>
+    </div>
+  );
+};
+
+export default NotFound;

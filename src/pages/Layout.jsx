@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const Layout = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -7,13 +9,25 @@ const Layout = () => {
         <p className="text-xl text-red-900 p-5 ">
           PLease Logn / Signup to continue{" "}
         </p>
-        <button className="mt-4 font-light bg-red-800 border rounded-lg border-gray-400 px-8 py-4 text-white shadow hover:bg-red-600 hover:text-red-200">
-          Log-In
-        </button>
-        <p className="text-red-900 p-2">or</p>
-        <button className=" mb-10 font-light bg-red-800 border rounded-lg border-gray-400 px-8 py-4 text-white shadow hover:bg-red-600 hover:text-red-200">
-          Sign-Up
-        </button>
+
+        <Link
+          to="/login"
+          className="mt-4 font-light bg-red-800 border rounded-lg border-gray-400 px-8 py-4 text-white shadow hover:bg-red-600 hover:text-red-200"
+        >
+          Login
+        </Link>
+
+        <p className="text-blue-900 p-4 font-bold">or</p>
+        <Link
+          to="/signup"
+          className=" font-light bg-red-800 border rounded-lg border-gray-400 px-8 py-4 text-white shadow hover:bg-red-600 hover:text-red-200"
+        >
+          Signup
+        </Link>
+
+        <Link className="mt-10 text-black font-bold" to="/home">
+          Skip Login
+        </Link>
       </form>
     </div>
   );

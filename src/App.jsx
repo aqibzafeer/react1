@@ -4,14 +4,16 @@ import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Layout from "./pages/Layout";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<LogIn />} />
+      <Route path="/login" element={<LogIn />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/" element={<Layout />} />
     </Routes>
   );
 };

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../layouts/header/Header";
+import Layout from "./Layout";
 
 const LogIn = () => {
   return (
     <div>
       <div>
-        {" "}
         <Header />
       </div>
       <div className="min-h-screen flex items-center justify-center">

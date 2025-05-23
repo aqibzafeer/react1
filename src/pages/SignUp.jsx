@@ -39,7 +39,7 @@ const SignUp = () => {
 
         <p className="text-red-900 p-4 mb-4">
           Already Register{" "}
-          <Link to="/" className="text-blue-900 p-4 mb-4 font-bold">
+          <Link to="/login" className="text-blue-900 p-4 mb-4 font-bold">
             Login Here
           </Link>{" "}
           <a className="" href=""></a>

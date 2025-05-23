@@ -17,11 +17,11 @@ function Home() {
         <Counter />
       </div>
 
-      <div className="flex flex-col sm:flex-row w-full p-5">
+      {/* <div className="flex flex-col sm:flex-row w-full p-5">
         <SideBar />
         <AboutLeft />
         <AboutRight />
-      </div>
+      </div> */}
 
       <Footer />
       <CopyRight />

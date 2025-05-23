@@ -17,7 +17,7 @@ function Header() {
               href="#"
               className=" text-white hover:text-red-400 font-bold px-5"
             >
-              CONTACT US
+              Customer Service
             </a>
           </div>
         </div>
